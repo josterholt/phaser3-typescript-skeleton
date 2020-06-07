@@ -5,6 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start:dev": "webpack-dev-server",
     "build": "babel src --out-dir dist",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "check-types": "tsc",
@@ -25,6 +26,14 @@
     "lint-staged": "^10.0.7",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
-    "typescript": "^3.5.3"
+    "typescript": "^3.5.3",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@babel/preset-typescript": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "phaser": "^3.23.0",
+    "webpack": "^4.43.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }
