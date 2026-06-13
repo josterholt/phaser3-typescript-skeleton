@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start:dev": "webpack-dev-server",
+    "start:dev": "set NODE_OPTIONS=--openssl-legacy-provider && webpack-dev-server",
     "build": "babel src --out-dir dist",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "check-types": "tsc",
@@ -35,5 +35,6 @@
     "phaser": "^3.23.0",
     "webpack": "^4.43.0",
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
